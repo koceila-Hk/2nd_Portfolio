@@ -1,0 +1,146 @@
+:root {
+   --background-color: #111F2B; 
+   /* --background-color: #DAEEF9; */
+    --color-text: #C1E3F5; 
+    --color-header: #061623; 
+    --font-family: 'PT Sans Narrow', sans-serif;
+    --font-text: 'lato', sans-serif;
+
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+html {
+    color: var(--color-text);
+    font-family: 'PT Sans Narrow', sans-serif;
+}  
+
+h1, h2, span {
+    font-family: var(--font-family);
+}
+
+p {
+    font-family: var(--font-text);
+}
+
+/* Header */
+
+header {
+    background-color: var(--color-header);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+/* Sidenav*/
+
+.sidenav { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d0d0dee;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #DAEEF9;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #A2DCF2;
+    color: #0D0D0D;
+}
+
+.sidenav .close-btn {
+    position: absolute;
+    top: 0;
+    right:0;
+    padding-right: 10%;
+    font-size: 2rem;
+ } 
+
+ #openBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #DAEEF9;
+    padding: 0 5px 5px;
+    
+ }
+
+ #openBtn:hover {
+    background-color: #A2DCF2;
+    color: #0D0D0D;
+ }
+
+/* Accueil */ 
+
+#banner {
+    background-image: url(/img/Accueil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#banner .inner {
+    background-color: rgba(86, 115, 158, 0.646);
+    color: #0D0D0D;
+    width: 100%;
+    text-align: center;
+}
+
+#banner h1 {
+font-size: 3rem;
+}
+
+#banner p {
+    font-size: 2rem;
+}
+
+#banner span {
+    color: #A2DCF2;
+}
+
+/* About */
+
+#About {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+#About h1, p {
+    padding: 5px;
+}
+
+.profile_pic {
+    width: 300px;
+}
+
+@media only screen and (width <= 600px) {
+    #About {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+}
+
+
+
